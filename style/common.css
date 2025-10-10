@@ -1,0 +1,20 @@
+:root {
+  --satoshi: "Satoshi";
+  --integral: "Integral";
+}
+
+.basic-btn{
+  font-family: var(--satoshi);
+  color: white;
+  padding: 0.8rem 4.4rem;
+  width: 16vw;
+}
+
+.index-sec-heading{
+    font-size: 48px;
+    font-weight: 900;
+    font-family: var(--integral);
+    color: #000;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,13 @@
+/* SATOSHI FONTS  */
+@font-face {
+  font-family: "Satoshi";
+  src: url("../plugins/fonts/satoshi/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+    format("woff2");
+}
+
+/* INTEGRAL CF FONTS  */
+
+@font-face {
+  font-family: "Integral";
+  src: url("../plugins/fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf") format("woff2");
+}

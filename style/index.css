@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--satoshi);
+}
+
+/* HEADER --------------------------------------------------------------------------- */
+/* HEADER-1  -------------------------------- */
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1030;
+}
+
+
+.alert {
+  background-color: #000;
+  line-height: 1;
+  border: 0px;
+  border-radius: 0;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.header-1-para {
+  font-family: var(--satoshi);
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+/* HEADER-2 ----------------------------------------*/
+.logo {
+  /* border: 1px solid black     ; */
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  /* border: 1px solid black; */
+}
+
+
+.search-box{
+  background-color: #f0f0f0;
+  border-radius: 62px;
+}
+
+.search-box input[type="search"]::placeholder{
+  margin-left: 100px;
+}
+.search-box input{
+  /* background-color: white; */
+  /* margin-left: 100px; */
+}
+
+.magnifyre-icon{
+  position: absolute;
+  top: 40%;
+  left: 57%;
+}
+
+
+.nav-search {
+  width: 28vw;
+  background-color: #f0f0f0;
+  transition: all 0.4s;
+}
+
+.nav-search:hover {
+  border: 1px solid black;
+}
+
+.navb {
+  width: 10%;
+}
+
+.nav-links a {
+  font-family: var(--satoshi);
+  color: black;
+  transition: all 0.6s;
+}
+
+.nav-links a:hover {
+  /* font-weight: 600; */
+  color: rgb(135, 135, 135);
+  /* text-shadow: 1px 1px 20px rgb(121, 121, 121); */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 90px;
+    /* thoda chhota ho jayega */
+  }
+}
+
+/* MAIN SECTION  */
+
+/* HERO SECTION  */
+.hero-section {
+  background-color: #f2f0f1;
+}
+
+.hero-section-detail-section h1 {
+  font-size: 4rem;
+  font-family: var(--integral);
+}
+
+.main-heading {
+  font-family: var(--integral);
+}
+
+.counter {
+  font-family: var(--satoshi);
+}
+
+.counter-box {
+  font-family: var(--satoshi);
+  border-right: 1px solid rgb(211, 211, 211);
+  height: 4rem;
+  padding: 0px 0.4em;
+}
+
+.counter-customer {
+  border: none;
+}
+
+.star {
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.star-small {
+  top: 50%;
+  right: 40%;
+  transform: scale(0.6);
+}
+
+.star-big {
+  top: 30%;
+  right: 10%;
+}
+
+.star-small:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.star-big:hover {
+  transform: rotate(45deg) scale(0.7);
+}
+
+.brands {
+  background-color: #000;
+}
+
+/* arrivals section  */
+.home-heading {
+  font-family: var(--integral);
+  margin: 2rem 0px;
+}
+
+.arrival-box {
+  border-radius: 20px;
+}
+
+.arrival-ratings {
+  margin-top: -1em;
+}
+
+.arrival-cards img {
+  width: 100%;
+}
+
+.btn-red {
+  background-color: rgba(255, 51, 51, 0.164);
+  border: none;
+  border-radius: 62px;
+  width: 20%;
+  font-size: 12px;
+}
+
+.view-btn {
+  /* width: 16vw; */
+  color: #000;
+  padding: 1rem 5rem;
+  background-color: #fff;
+  border-radius: 62px;
+  border: 0.5px solid #c4c4c4;
+  transition: all 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* style type section  */
+h2 {
+  font-family: var(--integral);
+}
+
+.photo-gallery-section {
+  background-color: #f0f0f0;
+  border-radius: 40px;
+}
+
+.photo-gallery-row {
+  width: 74vw;
+}
+
+.photo-gallery-row div {
+  padding: 0.5em;
+  /* margin: 0.4em; */
+}
+
+.casual-boy {
+  width: 40%;
+  height: 40vh;
+  overflow: hidden;
+  background-image: url(../assets/images/boywith-tshirt.png);
+  background-position: 60% 38%;
+  border-radius: 20px;
+}
+
+.formal-man {
+  width: 60%;
+  height: 40vh;
+  overflow: hidden;
+  background-image: url(../assets/images/mainwith-suit.png);
+  background-position: 10% 26%;
+  border-radius: 20px;
+}
+
+.party-girl {
+  width: 60%;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 20px;
+  background-position: 55% 40%;
+  background-image: url(../assets/images/girlwith-tshirt.png);
+}
+
+.gym-man {
+  width: 40%;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../assets/images/boywith-dumbel.png);
+  background-repeat: no-repeat;
+  background-position: 10% center;
+}
+
+/* review section  */
+.review-box {
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid rgb(176, 176, 176);
+}
+
+.review-heading {
+  font-family: var(--integral);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 2.4rem;
+}
+
+.review-content-heading {
+  font-family: var(--satoshi);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.review-content-para {
+  font-family: var(--satoshi);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+.review-blur-box {
+  width: 80px;
+  background: linear-gradient(to right, transparent, #fff);
+  pointer-events: none;
+}
+
+/* NEWZ LETTER SECTION  */
+
+.email-icon{
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  font-size:1.8rem;
+}
+
+
+.latest-offer {
+  background-color: black;
+  color: #fff;
+  font-size: 40px;
+  line-height: 45px;
+  font-family: var(--satoshi);
+}
+
+.latest-offer-heading {
+  font-family: var(--integral);
+  line-height: 45px;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+
+.first-input {
+  font-family: var(--satoshi);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.content-icon {
+  font-size: 20px;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.4);
+
+}
+
+.second-input {
+  font-family: var(--satoshi);
+  font-size: 16px;
+  color: black;
+}
+
+/* FOOTER SECTION  */
+/* footer */
+
+
+.footer-logo img {
+  width: 18vw;
+  /* border: 1px solid black; */
+}
+
+.footer-logo-para {
+  font-family: var(--satoshi);
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-heading {
+  font-family: var(--satoshi);
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  font-family: var(--satoshi);
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-links img {
+  border: 1px solid black;
+  width: 18%;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.footer-links img:nth-child(2) {
+  background-color: #000;
+  width: 14%;
+
+}
+
+.bg-gray {
+  margin-top: -90px;
+  color: gray;
+  background: #f0f0f0;
+}

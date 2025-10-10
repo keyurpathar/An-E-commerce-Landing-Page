@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cart-left-button {
+    width: 90px;
+}
+
+.search-box{
+  background-color: #f0f0f0;
+  border-radius: 62px;
+}
+
+.search-box input[type="search"]::placeholder{
+  padding: 10%;
+}
+.search-box input{
+  /* background-color: white; */
+}
+
+.magnifyre-icon{
+  position: absolute;
+  top: 40%;
+  /* left: 60%; */
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ovia || Cart Page</title>
+  <!-- bootstrap linked  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+    defer></script>
+  <!-- font css linked -->
+  <link rel="stylesheet" href="./style/font.css" />
+  <!-- common css linked -->
+  <link rel="stylesheet" href="./style/common.css" />
+  <!-- local css linked  -->
+  <link rel="stylesheet" href="./style/index.css" />
+  <!-- cart css linked -->
+  <link rel="stylesheet" href="./style/cart.css" />
+  <!-- Favicon linked -->
+  <link rel="shortcut icon" href="./assets/Favicon/favicon.png" type="image/x-icon" />
+  <!-- Font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <!-- HEADER-1  -->
+    <div class="d-flex align-items-center w-100 header-1">
+      <div class="alert alert-dark alert-dismissible fade show text-white fs-7 text-center py-1 m-0 w-100" role="alert">
+        <p class="m-0 p-2">
+          Sign up and get 20% off to your first order.
+          <a href="#" class="text-capitalize text-white">sign up now</a>
+        </p>
+        <button type="button" class="btn-close pb-1 me-5" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <!-- HEADER-2  -->
+
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <!-- hamburger -->
+        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navigationbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- logo -->
+        <a href="./index.html" class="navb"><img src="./assets/Logo/logo-2.png" alt="An logo Image" class="logo" /></a>
+        <!-- links -->
+        <div class="collapse navbar-collapse nav-links" id="navigationbar">
+          <ul class="navbar-nav flex-lg-row flex-column me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" class="mx-3 text-decoration-none fs-6">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="mx-3 text-decoration-none fs-6">On Sale</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="mx-3 text-decoration-none fs-6">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="mx-3 text-decoration-none fs-6">Brands</a>
+            </li>
+          </ul>
+        </div>
+        <!-- search bar -->
+        <div class="d-none d-lg-block search-box">
+           <i class="fa-solid fa-magnifying-glass  magnifyre-icon" style="color: #b3b8c1;"></i>
+          <input class="form-control me-2 nav-search rounded-pill" type="search" placeholder="Search For Products..."
+            aria-label="Search" />
+        </div>
+        <div class="nav-icons">
+          <a href="#" class="d-lg-none"><img src="./assets/SVG/search-btn.svg" alt="An Search Icon" /></a>
+          <a href="#" class="mx-3"><img src="./assets/SVG/cart.svg" alt="An Cart image" /></a>
+          <a href="#"><img src="./assets/SVG/profile.svg" alt="An profile Image" /></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container border-top border-dark mt-5">
+
+    </div>
+
+    <nav class="container bg-white w-0 mt-4"
+      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+      aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+      </ol>
+    </nav>
+
+    <!-- cart section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Cart Items -->
+          <div class="col-lg-8 cart-left">
+            <div class="card border-0 shadow-sm rounded-4 p-3 mb-3">
+              <!-- Item 1 -->
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/SVG/footer-tshirt.svg" alt="Gradient Graphic T-shirt" class="rounded-3 me-3"
+                    style="width:80px; height:80px; object-fit:cover;">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Gradient Graphic T-shirt</h6>
+                    <small class="text-muted d-block">Size: Large</small>
+                    <small class="text-muted d-block">Color: White</small>
+                    <p class="fw-semibold mt-2 mb-0">$145</p>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <button class="btn btn-link text-danger p-0 mb-2">
+                    <i class="bi bi-trash fs-5"></i>
+                  </button>
+                  <div class="input-group input-group-sm rounded-pill border cart-left-button">
+                    <button class="btn btn-outline-dark border-0">−</button>
+                    <input type="text" class="form-control text-center border-0" value="1">
+                    <button class="btn btn-outline-dark border-0">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/SVG/footer-shirt.svg" alt="Checkered Shirt" class="rounded-3 me-3"
+                    style="width:80px; height:80px; object-fit:cover;">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Checkered Shirt</h6>
+                    <small class="text-muted d-block">Size: Medium</small>
+                    <small class="text-muted d-block">Color: Red</small>
+                    <p class="fw-semibold mt-2 mb-0">$180</p>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <button class="btn btn-link text-danger p-0 mb-2">
+                    <i class="bi bi-trash fs-5"></i>
+                  </button>
+                  <div class="input-group input-group-sm rounded-pill border cart-left-button">
+                    <button class="btn btn-outline-dark border-0">−</button>
+                    <input type="text" class="form-control text-center border-0" value="1">
+                    <button class="btn btn-outline-dark border-0">+</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Item 3 -->
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/SVG/footer-pant.svg" alt="Skinny Fit Jeans" class="rounded-3 me-3"
+                    style="width:80px; height:80px; object-fit:cover;">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Skinny Fit Jeans</h6>
+                    <small class="text-muted d-block">Size: Large</small>
+                    <small class="text-muted d-block">Color: Blue</small>
+                    <p class="fw-semibold mt-2 mb-0">$240</p>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <button class="btn btn-link text-danger p-0 mb-2">
+                    <i class="bi bi-trash fs-5"></i>
+                  </button>
+                  <div class="input-group input-group-sm rounded-pill border cart-left-button">
+                    <button class="btn btn-outline-dark border-0">−</button>
+                    <input type="text" class="form-control text-center border-0" value="1">
+                    <button class="btn btn-outline-dark border-0">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4 p-4">
+              <h5 class="fw-bold mb-4">Order Summary</h5>
+
+              <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal</span>
+                <span class="fw-bold">$565</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Discount (-20%)</span>
+                <span class="text-danger">-$113</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Delivery Fee</span>
+                <span>$15</span>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between mb-4 ">
+                <span class="fw-bold">Total</span>
+                <span class="fw-bold fs-5">$467</span>
+              </div>
+
+              <!-- Promo Code -->
+              <div class="input-group mb-3">
+                <input type="text" class="form-control rounded-pill me-2" placeholder="Add promo code">
+                <button class="btn btn-dark rounded-pill">Apply</button>
+              </div>
+
+              <!-- Checkout Button -->
+              <button class="btn btn-dark w-100 rounded-pill py-2">
+                Go to Checkout →
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <!-- NEWZ LETTER SECTION  -->
+    <section class="container bg-black text-white mt-4 rounded-4 position-relative latest-offer">
+      <div class="d-flex justify-content-between align-items-center pt-5">
+        <h3 class="pt-3 ps-5 pb-5 latest-offer-heading">
+          STAY UPTO DATE ABOUT<br />
+          OUR LATEST OFFERS
+        </h3>
+        <div class="mb-5 me-5 position-relative">
+          <!-- <i class="fa-regular fa-envelope fa-beat position-absolute top-50 start-0 translate-middle-y ms-3 text-muted content-icon"></i> -->
+          <input class="form-control mb-2 rounded-pill ps-5 first-input" type="text"
+            placeholder="Enter Your email address" aria-label="Email" />
+          <input type="text" class="form-control me-5 rounded-pill text-black text-center second-input"
+            placeholder="Subscribe to Newsletter" aria-label="Email" />
+        </div>
+      </div>
+    </section>
+
+    <section class="foot bg-gray pt-5 pb-4 footer-section">
+      <div class="pt-5">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-4">
+              <h3 class="text-dark footer-logo">
+                <img src="./assets/Logo/footer-logo (1).png" alt="" />
+              </h3>
+              <p class="text-dark fw-normal footer-logo-para">
+                We have clothes that suits your style and which you’re proud
+                to wear. From women to men.
+              </p>
+              <div class="d-flex gap-2 mt-3 footer-links">
+                <img src="./assets/SVG/twitter.svg" alt="Twitter" class="" />
+                <img src="./assets/SVG/facebook.svg" alt="Facebook" />
+                <img src="./assets/SVG/instagram.svg" alt="Instagram" />
+                <img src="./assets/SVG/github.svg" alt="Github" />
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2 mb-4">
+              <h5 class="text-dark fw-medium mt-5 footer-heading">Company</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark text-decoration-none footer-content">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Works</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <h5 class="text-dark mt-5 footer-heading">Help</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Customer Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Delivery Details</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-4">
+              <h5 class="text-dark mt-5 footer-heading">FAQ</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Account</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Manage Deliveries</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Orders</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Payments</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+              <h5 class="text-dark mt-5 footer-heading">Resources</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Free eBooks</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Development Tutorial</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">How to - Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark text-decoration-none fw-normal footer-content">Youtube Playlist</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="mb-4 mt-5 border-dark" />
+      </div>
+      <div class="container d-flex justify-content-between align-items-center py-3">
+        <p>Ovia.store © 2000-2023, All Rights Reserved</p>
+        <div class="d-flex">
+          <img src="./assets/SVG/footer-brands/visa.svg" alt="#" />
+          <img src="./assets/SVG/footer-brands/master-card.svg" alt="#" />
+          <img src="./assets/SVG/footer-brands/paypal.svg" alt="#" />
+          <img src="./assets/SVG/footer-brands/apple-pay.svg" alt="" />
+          <img src="./assets/SVG/footer-brands/google-pay.svg" alt="" />
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
